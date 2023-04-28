@@ -13,13 +13,16 @@ btnadd.addEventListener("click", function(){
 	let trD1=document.createElement("td");
 	let trD2=document.createElement("td");
 	let trD3=document.createElement("td");
+	let trD4=document.createElement("td");
 	trD1.textContent=ini.value;
 	trD2.textContent=ipi.value;
 	trD3.textContent=rownum;
+	trD4.textContent=iqi.value;
 	rownum++;
 	trD3.id="item-qty-input";
 	trRow.appendChild(trD3);
 	trRow.appendChild(trD1);
+	trRow.appendChild(trD4);
 	trRow.appendChild(trD2);
 	tar.appendChild(trRow);
 	gt=gt+(parseInt(ipi.value)* parseInt(iqi.value));
