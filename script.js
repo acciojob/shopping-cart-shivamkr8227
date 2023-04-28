@@ -1,6 +1,7 @@
 //your code here
 let ini=document.getElementById("item-name-input");
 let ipi=document.getElementById("item-price-input");
+let iqi=document.getElementById("item-qty-input");
 let btnadd=document.getElementById("add");
 let h3total=document.getElementById("total");
 let tar=document.getElementById("tab");
@@ -21,8 +22,9 @@ btnadd.addEventListener("click", function(){
 	trRow.appendChild(trD1);
 	trRow.appendChild(trD2);
 	tar.appendChild(trRow);
-	gt=gt+parseInt(ipi.value);
+	gt=gt+(parseInt(ipi.value)* parseInt(iqi.value));
 	h3total.innerHTML="Grand Total: "+gt;
 	ini.value="";
 	ipi.value="";
+	iqi.value="";
 });
