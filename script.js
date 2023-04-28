@@ -15,6 +15,7 @@ btnadd.addEventListener("click", function(){
 	trD1.textContent=ini.value;
 	trD2.textContent=ipi.value;
 	trD3.textContent=rownum;
+	rownum++;
 	trD3.id="item-qty-input";
 	trRow.appendChild(trD3);
 	trRow.appendChild(trD1);
